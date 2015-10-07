@@ -26,5 +26,11 @@ namespace AspNetMvc.Controllers
 
             return View();
         }
+
+        public ActionResult Test()
+        {
+            return Json(new { a="qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"},JsonRequestBehavior.AllowGet);
+        }
+
     }
 }

@@ -29,18 +29,37 @@
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
-<input value="点击" onclick="Click()" />
+
+<input value="点击mvc" onclick="ClickMvc()" />
+<input value="点击api" onclick="ClickApi()" />
 <div id="resText"></div>
 <script>
-    function Click() {
+    function ClickMvc() {
+        var myDate = new Date();
         $.ajax({
             type: "GET",
-            url: "@Url.Action("Test")",
-            dataType: "json",
+            url: "@Url.Action("GetAllProducts","Home")",
+            //dataType: "json",
             success: function (data) {
-
-                $('#resText').html(data);
+                debugger;
+                var myDate1 = new Date();
+                //$('#resText').html(myDate.getMilliseconds() + "--" + myDate1.getMilliseconds());
+                $('#resText').html(JSON.stringify(data));
             }
         });
+    }
+
+    function ClickApi() {
+       var myDate = new Date();
+        $.ajax({
+            type: "GET",
+            url: "/api/products",
+            //dataType: "json",
+            success: function (data) {
+                var myDate1 = new Date();
+                //$('#resText').html(myDate.getMilliseconds() + "--" + myDate1.getMilliseconds());
+                $('#resText').html(JSON.stringify(data));
+        }
+    });
     }
 </script>
