@@ -14,8 +14,8 @@ namespace TransactionTest
 
             Console.Write("开始");
             Console.Read();
-            //EditProducts1();
-            EditProducts2();
+            EditProducts1();
+            //EditProducts2();
             //CreateProducts();
             //ThreadPool.QueueUserWorkItem(p=> Program.EditProducts1());
             //ThreadPool.QueueUserWorkItem(p => Program.EditProducts2());
@@ -46,7 +46,8 @@ namespace TransactionTest
             {
                 using (var dbContext = new TwTransactionTest())
                 {
-                    using (var transaction = dbContext.Database.BeginTransaction())
+                    //using (var transaction = dbContext.Database.BeginTransaction())
+                    using (var transaction = dbContext.Database.BeginTransaction(System.Data.IsolationLevel.RepeatableRead))
                     {
                         var Product = dbContext.Product.FirstOrDefault(p => p.Id == 2);
                         Product.Name = "123";
@@ -70,8 +71,9 @@ namespace TransactionTest
                 using (var dbContext = new TwTransactionTest())
                 {
                     using (var transaction = dbContext.Database.BeginTransaction())
+                    //using (var transaction = dbContext.Database.BeginTransaction( System.Data.IsolationLevel.RepeatableRead))
                     {
-                        var Product = dbContext.Product.FirstOrDefault(p => p.Id == 2);
+                        var Product = dbContext.Product.FirstOrDefault(p => p.Id == 3);
                         Product.Name = "123456";
 
                         dbContext.SaveChanges();

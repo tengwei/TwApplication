@@ -14,8 +14,8 @@ namespace TransactionTest
 
             Console.Write("开始");
             Console.Read();
+            //EditProducts();
             EditProducts1();
-           // EditProducts2();
             //CreateProducts();
             //ThreadPool.QueueUserWorkItem(p=> Program.EditProducts1());
             //ThreadPool.QueueUserWorkItem(p => Program.EditProducts2());
@@ -46,14 +46,30 @@ namespace TransactionTest
             {
                 using (var dbContext = new TwTransactionTest())
                 {
-                    var Product = dbContext.Product.FirstOrDefault(p => p.Id == 2);
-                    Product.Name = "123";
-                    //Thread.Sleep(1000000000);
-                    dbContext.SaveChanges();
+                    //using (var transaction = dbContext.Database.BeginTransaction())
+                    using (var transaction = dbContext.Database.BeginTransaction(System.Data.IsolationLevel.RepeatableRead))
+                    {
+                        try
+                        {
+                            var Product = dbContext.Product.FirstOrDefault(p => p.Id == 2);
+                            Product.Name = "123";
+
+                            dbContext.SaveChanges();
+                           transaction.Commit();
+
+                        }
+                        catch( Exception ex)
+                        {
+                            transaction.Rollback();
+                        }
+                       
+                        
+                    }
                 }
             }
             catch (Exception ex)
             {
+                
                 throw ex;
             }
         }
@@ -64,10 +80,14 @@ namespace TransactionTest
             {
                 using (var dbContext = new TwTransactionTest())
                 {
-                    var Product = dbContext.Product.FirstOrDefault(p => p.Id == 2);
-                    Product.Name = "123456";
-                   
-                    dbContext.SaveChanges();
+                    using (var transaction = dbContext.Database.BeginTransaction())
+                    {
+                        var Product = dbContext.Product.FirstOrDefault(p => p.Id == 2);
+                        Product.Name = "123456";
+
+                        dbContext.SaveChanges();
+                        transaction.Commit();
+                    }
                 }
             }
             catch (Exception ex)
