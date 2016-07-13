@@ -1,0 +1,12 @@
+F:\技术研究\Online\Online.ClientTest\bin\Debug\Online.ClientTest.exe.config
+F:\技术研究\Online\Online.ClientTest\bin\Debug\Online.ClientTest.exe
+F:\技术研究\Online\Online.ClientTest\bin\Debug\Online.Common.dll
+F:\技术研究\Online\Online.ClientTest\bin\Debug\Online.IServices.dll
+F:\技术研究\Online\Online.ClientTest\bin\Debug\Online.Models.dll
+F:\技术研究\Online\Online.ClientTest\bin\Debug\Online.Common.pdb
+F:\技术研究\Online\Online.ClientTest\bin\Debug\Online.IServices.pdb
+F:\技术研究\Online\Online.ClientTest\bin\Debug\Online.ClientTest.pdb
+F:\技术研究\Online\Online.ClientTest\bin\Debug\Online.Models.pdb
+F:\技术研究\Online\Online.ClientTest\obj\Debug\Online.ClientTest.csprojResolveAssemblyReference.cache
+F:\技术研究\Online\Online.ClientTest\obj\Debug\Online.ClientTest.exe
+F:\技术研究\Online\Online.ClientTest\obj\Debug\Online.ClientTest.pdb

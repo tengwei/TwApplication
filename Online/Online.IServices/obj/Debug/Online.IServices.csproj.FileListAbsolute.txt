@@ -1,0 +1,7 @@
+F:\技术研究\Online\Online.IServices\bin\Debug\Online.IServices.dll
+F:\技术研究\Online\Online.IServices\bin\Debug\Online.IServices.pdb
+F:\技术研究\Online\Online.IServices\bin\Debug\Online.Models.dll
+F:\技术研究\Online\Online.IServices\bin\Debug\Online.Models.pdb
+F:\技术研究\Online\Online.IServices\obj\Debug\Online.IServices.csprojResolveAssemblyReference.cache
+F:\技术研究\Online\Online.IServices\obj\Debug\Online.IServices.dll
+F:\技术研究\Online\Online.IServices\obj\Debug\Online.IServices.pdb

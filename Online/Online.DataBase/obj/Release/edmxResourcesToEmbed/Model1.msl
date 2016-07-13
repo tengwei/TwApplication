@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_10140_archivesModelStoreContainer" CdmEntityContainer="db_10140_archivesEntities">
+    <EntitySetMapping Name="db_API_Operationallog">
+      <EntityTypeMapping TypeName="db_10140_archivesModel.db_API_Operationallog">
+        <MappingFragment StoreEntitySet="db_API_Operationallog">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="types" ColumnName="types" />
+          <ScalarProperty Name="events" ColumnName="events" />
+          <ScalarProperty Name="more" ColumnName="more" />
+          <ScalarProperty Name="money" ColumnName="money" />
+          <ScalarProperty Name="lastmoney" ColumnName="lastmoney" />
+          <ScalarProperty Name="nowmoney" ColumnName="nowmoney" />
+          <ScalarProperty Name="bak" ColumnName="bak" />
+          <ScalarProperty Name="times" ColumnName="times" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

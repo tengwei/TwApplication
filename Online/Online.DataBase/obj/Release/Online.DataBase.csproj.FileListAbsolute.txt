@@ -1,0 +1,11 @@
+F:\技术研究\Online\Online.DataBase\bin\Release\Online.DataBase.dll.config
+F:\技术研究\Online\Online.DataBase\bin\Release\Online.DataBase.dll
+F:\技术研究\Online\Online.DataBase\bin\Release\Online.DataBase.pdb
+F:\技术研究\Online\Online.DataBase\bin\Release\EntityFramework.dll
+F:\技术研究\Online\Online.DataBase\bin\Release\EntityFramework.SqlServer.dll
+F:\技术研究\Online\Online.DataBase\bin\Release\EntityFramework.xml
+F:\技术研究\Online\Online.DataBase\bin\Release\EntityFramework.SqlServer.xml
+F:\技术研究\Online\Online.DataBase\bin\Release\zh-Hans\EntityFramework.resources.dll
+F:\技术研究\Online\Online.DataBase\obj\Release\Online.DataBase.dll
+F:\技术研究\Online\Online.DataBase\obj\Release\Online.DataBase.pdb
+F:\技术研究\Online\Online.DataBase\obj\Release\Online.DataBase.csprojResolveAssemblyReference.cache

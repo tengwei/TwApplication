@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_10140_archivesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="db_API_Operationallog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="uid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="types" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="events" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="more" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="money" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="lastmoney" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="nowmoney" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="bak" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="times" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="db_10140_archivesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="db_API_Operationallog" EntityType="Self.db_API_Operationallog" />
+  </EntityContainer>
+</Schema>

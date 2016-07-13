@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="db_10140_archivesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="db_API_Operationallog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="uid" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="types" Type="nvarchar" MaxLength="50" />
+          <Property Name="events" Type="nvarchar" MaxLength="50" />
+          <Property Name="more" Type="nvarchar" MaxLength="50" />
+          <Property Name="money" Type="money" />
+          <Property Name="lastmoney" Type="money" />
+          <Property Name="nowmoney" Type="money" />
+          <Property Name="bak" Type="nvarchar" MaxLength="2000" />
+          <Property Name="times" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="db_10140_archivesModelStoreContainer">
+          <EntitySet Name="db_API_Operationallog" EntityType="Self.db_API_Operationallog" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_10140_archivesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="db_API_Operationallog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="uid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="types" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="events" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="more" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="money" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="lastmoney" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="nowmoney" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="bak" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="times" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="db_10140_archivesEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="db_API_Operationallog" EntityType="Self.db_API_Operationallog" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_10140_archivesModelStoreContainer" CdmEntityContainer="db_10140_archivesEntities">
+          <EntitySetMapping Name="db_API_Operationallog">
+            <EntityTypeMapping TypeName="db_10140_archivesModel.db_API_Operationallog">
+              <MappingFragment StoreEntitySet="db_API_Operationallog">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="types" ColumnName="types" />
+                <ScalarProperty Name="events" ColumnName="events" />
+                <ScalarProperty Name="more" ColumnName="more" />
+                <ScalarProperty Name="money" ColumnName="money" />
+                <ScalarProperty Name="lastmoney" ColumnName="lastmoney" />
+                <ScalarProperty Name="nowmoney" ColumnName="nowmoney" />
+                <ScalarProperty Name="bak" ColumnName="bak" />
+                <ScalarProperty Name="times" ColumnName="times" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
