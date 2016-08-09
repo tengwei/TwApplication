@@ -11,3 +11,13 @@ E:\Project\SOA\WCFConcurrency\Host\obj\x86\Debug\Host.pdb
 C:\Users\Administrator\Downloads\WCFConcurrency\Host\bin\Debug\Host.exe.config
 C:\Users\Administrator\Downloads\WCFConcurrency\Host\obj\x86\Debug\Host.exe
 C:\Users\Administrator\Downloads\WCFConcurrency\Host\obj\x86\Debug\Host.pdb
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\WCFConcurrency\Host\bin\Debug\Host.exe.config
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\WCFConcurrency\Host\bin\Debug\Host.exe
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\WCFConcurrency\Host\bin\Debug\Host.pdb
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\WCFConcurrency\Host\bin\Debug\Contract.dll
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\WCFConcurrency\Host\bin\Debug\Service.dll
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\WCFConcurrency\Host\bin\Debug\Contract.pdb
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\WCFConcurrency\Host\bin\Debug\Service.pdb
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\WCFConcurrency\Host\obj\x86\Debug\Host.csprojResolveAssemblyReference.cache
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\WCFConcurrency\Host\obj\x86\Debug\Host.exe
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\WCFConcurrency\Host\obj\x86\Debug\Host.pdb

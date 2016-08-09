@@ -24,7 +24,10 @@ namespace Client
 			{
 				(proxy as ICommunicationObject).Open();
 			}
-			for (int i = 0; i < 5; i++)
+		    var datatime = DateTime.Now;
+            Console.WriteLine(datatime);
+		    int num = 100;
+            for (int i = 0; i < num; i++)
 			{
 				
 				ThreadPool.QueueUserWorkItem(delegate
@@ -34,12 +37,16 @@ namespace Client
 				                             			OperationContextScope contextScope =
 				                             				new OperationContextScope(proxy as IContextChannel))
 				                             		{
-														MessageHeader<int> header = new MessageHeader<int>(clientId);
+                                                         Console.WriteLine(i);
+                                                         MessageHeader<int> header = new MessageHeader<int>(clientId);
 				                             			System.ServiceModel.Channels.MessageHeader messageHeader =
 				                             				header.GetUntypedHeader(MessageWrapper.headerClientId,
 				                             				                        MessageWrapper.headerNamespace);
 				                             			OperationContext.Current.OutgoingMessageHeaders.Add(messageHeader);
 				                             			proxy.Add(1, 2);
+				                             		    if (i == num-1) {
+                                                             Console.WriteLine((DateTime.Now - datatime).Seconds);
+                                                         }
 				                             		}
 				                             	});
 			}

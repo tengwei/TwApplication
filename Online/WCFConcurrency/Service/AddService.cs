@@ -26,8 +26,8 @@ namespace Service
 			Console.ForegroundColor = ConsoleColor.Red;
 			Console.WriteLine(string.Format("Time:{0};ThreadId is :{1}.Request Id is {2} Add Method Invoked,", DateTime.Now,Thread.CurrentThread.ManagedThreadId,clientId));
 			Console.WriteLine(string.Format("result is : {0}",x + y));
-			Thread.Sleep(5000);
-			Console.WriteLine("=========Excute finished=========");			
+            Thread.Sleep(1000*60*10);
+            Console.WriteLine("=========Excute finished=========");			
 			Console.WriteLine();
 		}
 

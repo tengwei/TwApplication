@@ -1,0 +1,1 @@
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\WCFConcurrency\Client\bin\Release\Client.exe.config

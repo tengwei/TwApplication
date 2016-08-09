@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9b5d7f9c-abde-40e7-ba2f-d8186b9ecf11" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://127.0.0.1:3636/AddService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AddService.xsd" MetadataType="Schema" ID="1c2342ce-cf8f-4bf4-a962-a31b3d709d48" SourceId="1" SourceUrl="http://127.0.0.1:3636/AddService?xsd=xsd0" />
+    <MetadataFile FileName="AddService.wsdl" MetadataType="Wsdl" ID="378e2999-b016-4918-a4ef-12b600928a21" SourceId="1" SourceUrl="http://127.0.0.1:3636/AddService?wsdl" />
+    <MetadataFile FileName="AddService.disco" MetadataType="Disco" ID="1d81e09b-9921-4417-a1b6-fda31fa4b88f" SourceId="1" SourceUrl="http://127.0.0.1:3636/AddService?disco" />
+    <MetadataFile FileName="AddService1.xsd" MetadataType="Schema" ID="a22f5ef2-5c6e-49ab-8447-989d140f7d58" SourceId="1" SourceUrl="http://127.0.0.1:3636/AddService?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
