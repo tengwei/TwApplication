@@ -5,7 +5,7 @@ using Contract;
 
 namespace Service
 {
-	[ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession, ConcurrencyMode = ConcurrencyMode.Single)]
+	[ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession, ConcurrencyMode = ConcurrencyMode.Multiple)]
 	public class AddService : IAdd
 	{
 		private readonly int counter = 0;
