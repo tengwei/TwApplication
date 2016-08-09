@@ -1,0 +1,184 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="interface" priority="0" />
+      <Item value="void" priority="1" />
+      <Item value="int" priority="5" />
+      <Item value="public" priority="3" />
+      <Item value="AddService`0" priority="0" />
+      <Item value="Console`0" priority="5" />
+      <Item value="counter" priority="1" />
+      <Item value="string" priority="3" />
+      <Item value="using" priority="1" />
+      <Item value="new" priority="4" />
+      <Item value="ServiceHost" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="host" priority="0" />
+      <Item value="const" priority="1" />
+      <Item value="static" priority="2" />
+      <Item value="ChannelFactory&lt;IAdd&gt;" priority="0" />
+      <Item value="factory" priority="1" />
+      <Item value="for" priority="0" />
+      <Item value="i" priority="1" />
+      <Item value="delegate" priority="0" />
+      <Item value="proxy" priority="2" />
+      <Item value="Thread`0" priority="0" />
+      <Item value="MessageHeader" priority="0" />
+      <Item value="header" priority="2" />
+      <Item value="MessageHeader&lt;int&gt;" priority="0" />
+      <Item value="OperationContext`0" priority="0" />
+      <Item value="MessageWrapper`0" priority="3" />
+      <Item value="Interlocked`0" priority="0" />
+      <Item value="ref" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="clientId" priority="0" />
+      <Item value="System" priority="0" />
+      <Item value="ServiceModel" priority="0" />
+      <Item value="Channels" priority="0" />
+      <Item value="MessageHeader`0" priority="0" />
+      <Item value="messageHeader" priority="0" />
+      <Item value="contextScope" priority="0" />
+      <Item value="OperationContextScope" priority="0" />
+      <Item value="as" priority="1" />
+      <Item value="IContextChannel`0" priority="0" />
+      <Item value="Red" priority="0" />
+      <Item value="if" priority="0" />
+      <Item value="ICommunicationObject`0" priority="0" />
+      <Item value="ServiceBehavior" priority="0" />
+      <Item value="InstanceContext`0" priority="0" />
+      <Item value="InstanceContextMode`0" priority="0" />
+      <Item value="ConcurrencyMode" priority="1" />
+      <Item value="ConcurrencyMode`0" priority="1" />
+      <Item value="SessionMode" priority="1" />
+      <Item value="SecurityMode`0" priority="0" />
+      <Item value="SessionMode`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="6" />
+      <Item value="ReadLine`0" priority="1" />
+      <Item value="ForegroundColor" priority="0" />
+      <Item value="ResetColor`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="CurrentThread" priority="0" />
+      <Item value="Sleep`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Thread">
+      <Item value="ManagedThreadId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.ServiceHost">
+      <Item value="Open`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.ChannelFactory`1">
+      <Item value="CreateChannel`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.ThreadPool">
+      <Item value="QueueUserWorkItem`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Contract.IAdd">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.OperationContext">
+      <Item value="Current" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.OperationContext">
+      <Item value="OutgoingMessageHeaders" priority="0" />
+      <Item value="IncomingMessageHeaders" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Channels.MessageHeaders">
+      <Item value="Add`0" priority="1" />
+      <Item value="GetHeader`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.MessageHeader`1">
+      <Item value="GetUntypedHeader`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Contract.MessageWrapper">
+      <Item value="headerClientId" priority="1" />
+      <Item value="headerNamespace" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Interlocked">
+      <Item value="Increment`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.ICommunicationObject">
+      <Item value="Open`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.InstanceContextMode">
+      <Item value="Single" priority="4" />
+      <Item value="PerCall" priority="2" />
+      <Item value="PerSession" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.ConcurrencyMode">
+      <Item value="Multiple" priority="4" />
+      <Item value="Reentrant" priority="2" />
+      <Item value="Single" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.SessionMode">
+      <Item value="Required" priority="1" />
+      <Item value="Allowed" priority="1" />
+      <Item value="NotAllowed" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="9CA4B1E9-290B-47FF-9FBA-A67FC33B6353/f:Program.cs" caret="150" fromTop="8" />
+      <File id="3ECD9C38-CB43-4FB2-8594-9A53FFC02CD0/f:MessageWrapper.cs" caret="172" fromTop="6" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:App.config" caret="291" fromTop="7" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="602" fromTop="17" />
+      <File id="96EE90B3-4DA3-4863-B956-1D40F3EE58D6/f:AddService.cs" caret="216" fromTop="7" />
+      <File id="3ECD9C38-CB43-4FB2-8594-9A53FFC02CD0/f:IAdd.cs" caret="157" fromTop="7" />
+      <File id="9CA4B1E9-290B-47FF-9FBA-A67FC33B6353/f:App.config" caret="154" fromTop="5" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="96EE90B3-4DA3-4863-B956-1D40F3EE58D6/f:AddService.cs" caret="1186" fromTop="7" />
+      <File id="96EE90B3-4DA3-4863-B956-1D40F3EE58D6/f:AddService.cs" caret="1182" fromTop="6" />
+      <File id="96EE90B3-4DA3-4863-B956-1D40F3EE58D6/f:AddService.cs" caret="474" fromTop="9" />
+      <File id="96EE90B3-4DA3-4863-B956-1D40F3EE58D6/f:AddService.cs" caret="288" fromTop="7" />
+      <File id="9CA4B1E9-290B-47FF-9FBA-A67FC33B6353/f:Program.cs" caret="332" fromTop="17" />
+      <File id="9CA4B1E9-290B-47FF-9FBA-A67FC33B6353/f:Program.cs" caret="286" fromTop="13" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:App.config" caret="247" fromTop="7" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="2869" fromTop="18" />
+      <File id="96EE90B3-4DA3-4863-B956-1D40F3EE58D6/f:AddService.cs" caret="1068" fromTop="16" />
+      <File id="3ECD9C38-CB43-4FB2-8594-9A53FFC02CD0/f:MessageWrapper.cs" caret="174" fromTop="7" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="1598" fromTop="13" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="1598" fromTop="20" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="1079" fromTop="16" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="755" fromTop="10" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="154" fromTop="9" />
+      <File id="96EE90B3-4DA3-4863-B956-1D40F3EE58D6/f:AddService.cs" caret="368" fromTop="7" />
+      <File id="96EE90B3-4DA3-4863-B956-1D40F3EE58D6/f:AddService.cs" caret="918" fromTop="16" />
+      <File id="96EE90B3-4DA3-4863-B956-1D40F3EE58D6/f:AddService.cs" caret="1032" fromTop="14" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="1818" fromTop="17" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="2849" fromTop="23" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="252" fromTop="14" />
+      <File id="9CA4B1E9-290B-47FF-9FBA-A67FC33B6353/f:App.config" caret="117" fromTop="4" />
+      <File id="96EE90B3-4DA3-4863-B956-1D40F3EE58D6/f:AddService.cs" caret="1165" fromTop="17" />
+      <File id="9CA4B1E9-290B-47FF-9FBA-A67FC33B6353/f:App.config" caret="83" fromTop="3" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="614" fromTop="14" />
+      <File id="9CA4B1E9-290B-47FF-9FBA-A67FC33B6353/f:App.config" caret="392" fromTop="12" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:App.config" caret="179" fromTop="4" />
+      <File id="96EE90B3-4DA3-4863-B956-1D40F3EE58D6/f:AddService.cs" caret="221" fromTop="7" />
+      <File id="100CD60C-9A7D-4683-8A88-E1E9E2F756FF/f:Program.cs" caret="570" fromTop="10" />
+      <File id="3ECD9C38-CB43-4FB2-8594-9A53FFC02CD0/f:IAdd.cs" caret="97" fromTop="4" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.6\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

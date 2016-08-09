@@ -1,0 +1,5 @@
+E:\Project\SOA\WCFConcurrency\Contract\bin\Debug\Contract.dll
+E:\Project\SOA\WCFConcurrency\Contract\bin\Debug\Contract.pdb
+E:\Project\SOA\WCFConcurrency\Contract\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\SOA\WCFConcurrency\Contract\obj\Debug\Contract.dll
+E:\Project\SOA\WCFConcurrency\Contract\obj\Debug\Contract.pdb

@@ -1,0 +1,8 @@
+E:\Project\SOA\WCFConcurrency\Client\bin\Debug\Client.exe
+E:\Project\SOA\WCFConcurrency\Client\bin\Debug\Client.pdb
+E:\Project\SOA\WCFConcurrency\Client\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Project\SOA\WCFConcurrency\Client\obj\x86\Debug\Client.exe
+E:\Project\SOA\WCFConcurrency\Client\obj\x86\Debug\Client.pdb
+E:\Project\SOA\WCFConcurrency\Client\bin\Debug\Client.exe.config
+E:\Project\SOA\WCFConcurrency\Client\bin\Debug\Contract.dll
+E:\Project\SOA\WCFConcurrency\Client\bin\Debug\Contract.pdb
