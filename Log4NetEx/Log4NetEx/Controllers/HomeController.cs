@@ -1,17 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 using System.Web;
 using System.Web.Mvc;
+using Log4Net.Ex;
+using Newtonsoft.Json;
 using StackExchange.Redis;
 
 namespace Log4NetEx.Controllers {
     public class HomeController : Controller {
+        readonly ILog logger = LogManager.GetLogger(ModuleEnum.订单.ToString());
         public ActionResult Index() {
-            throw new Exception("123456");
-            Session["UserAgent"] = Request.UserAgent;
-            ViewData.Model = "访问状态已分布式存储session";
+            //log4net.ThreadContext.Properties["EventName"] = "EventName";
+            //log4net.ThreadContext.Properties["UserIP"] = "UserIP";
+            //log4net.GlobalContext.Properties["OurCompany.ApplicationName"] = "fubar";
+            //try {
+            //   throw new Exception("sadsa");
+            //}
+            //catch (Exception ex) {
+            //    logger.Debug("werqwwq",ex);
+                
+            //}
+            //logger.Debug(JsonConvert.SerializeObject(new {dsfsd="werewr",sdfds="52332"}));
+            logger.Debug(new Log4NetMessageModel(){message = "失败"});
+            logger.Info(new Log4NetMessageModel() { message = "失败" });
+            //logger.Debug("wrety");
+            //logger.Debug("wrety");
+            //logger.Debug(new { Body = "Hello!" });
+            //logger.Debug(new { ErrorMessage = "Something went wrong!" });
+            //log4net.ThreadContext.Properties["EventName"] = "EventName";
+            //log4net.ThreadContext.Properties["UserIP"] = "UserIP";
+            //log4net.GlobalContext.Properties["OurCompany.ApplicationName"] = "fubar";
+            //logger.Debug(new { Key = "Hey", Value = "You?" });
+            //throw new Exception("123456");
+            //Session["UserAgent"] = Request.UserAgent;
+            //ViewData.Model = "访问状态已分布式存储session";
             //Thread.Sleep(10000);
             return View();
         }

@@ -9,18 +9,20 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using log4net;
+using Log4Net.Ex;
 
-[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+
 namespace Log4NetEx {
     public class MvcApplication : System.Web.HttpApplication {
-        readonly ILog logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+        //readonly ILog logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         protected void Application_Start() {
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             //InitQueue();
-            InitRedis();
+            //InitRedis();
+            LogManager.Init("TEST", Enum.GetNames(typeof(ModuleEnum)).ToList());
         }
 
         private void InitQueue() {
@@ -59,7 +61,7 @@ namespace Log4NetEx {
                     if (redis.ListLength("errorMsg") > 0) {
                         string ex = redis.ListRightPop<string>("errorMsg");
                         if (ex != null) {
-                            logger.Debug(ex);
+                            //logger.Debug(ex);
                         }
                         else {
                             Thread.Sleep(50);
