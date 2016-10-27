@@ -6,6 +6,7 @@ using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 using Log4Net.Ex;
+using MongoDB.Driver;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 
@@ -38,6 +39,11 @@ namespace Log4NetEx.Controllers {
             //Session["UserAgent"] = Request.UserAgent;
             //ViewData.Model = "访问状态已分布式存储session";
             //Thread.Sleep(10000);
+
+            var client = new MongoClient("mongodb://localhost:27017");
+            var database = client.GetDatabase("Log4Net");
+            var collection = database.GetCollection<Log4NetMessageModel>("Log4NetLog");
+
             return View();
         }
 

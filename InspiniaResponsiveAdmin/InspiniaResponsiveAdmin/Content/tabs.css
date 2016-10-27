@@ -66,11 +66,11 @@ nav.page-tabs {
     }
 
 .roll-right.J_tabRight {
-    right: 140px;
+    right: 0px;
 }
 
 .roll-right.btn-group {
-    right: 60px;
+    right: 0px;
     width: 80px;
     padding: 0;
 }
