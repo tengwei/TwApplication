@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Online.Models", "Online.Models\Online.Models.csproj", "{AF796A5F-4F7F-4118-8DFA-F59C08A8E4FF}"
 EndProject
@@ -14,6 +14,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Online.DataBase", "Online.DataBase\Online.DataBase.csproj", "{77FBE3A6-31A6-46CF-9052-2911447663F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Online.ClientTest", "Online.ClientTest\Online.ClientTest.csproj", "{C3E67DCD-D8D6-4E35-9308-662DE5E4A817}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA20F18D-9BF7-4045-AED1-D82B0BF3924E} = {DA20F18D-9BF7-4045-AED1-D82B0BF3924E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Online.Common", "Online.Common\Online.Common.csproj", "{D58340FB-F523-4849-8F32-C4C7E9522F31}"
 EndProject

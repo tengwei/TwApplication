@@ -9,3 +9,13 @@ F:\技术研究\Online\Online.DataBase\bin\Debug\zh-Hans\EntityFramework.resourc
 F:\技术研究\Online\Online.DataBase\obj\Debug\Online.DataBase.csprojResolveAssemblyReference.cache
 F:\技术研究\Online\Online.DataBase\obj\Debug\Online.DataBase.dll
 F:\技术研究\Online\Online.DataBase\obj\Debug\Online.DataBase.pdb
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.DataBase\bin\Debug\Online.DataBase.dll.config
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.DataBase\bin\Debug\Online.DataBase.dll
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.DataBase\bin\Debug\Online.DataBase.pdb
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.DataBase\bin\Debug\EntityFramework.dll
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.DataBase\bin\Debug\EntityFramework.SqlServer.dll
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.DataBase\bin\Debug\EntityFramework.xml
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.DataBase\bin\Debug\EntityFramework.SqlServer.xml
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.DataBase\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.DataBase\obj\Debug\Online.DataBase.dll
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.DataBase\obj\Debug\Online.DataBase.pdb

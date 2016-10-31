@@ -5,3 +5,10 @@ F:\技术研究\Online\Online.IServices\bin\Debug\Online.Models.pdb
 F:\技术研究\Online\Online.IServices\obj\Debug\Online.IServices.csprojResolveAssemblyReference.cache
 F:\技术研究\Online\Online.IServices\obj\Debug\Online.IServices.dll
 F:\技术研究\Online\Online.IServices\obj\Debug\Online.IServices.pdb
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.IServices\bin\Debug\Online.IServices.dll
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.IServices\bin\Debug\Online.IServices.pdb
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.IServices\bin\Debug\Online.Models.dll
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.IServices\bin\Debug\Online.Models.pdb
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.IServices\obj\Debug\Online.IServices.csprojResolveAssemblyReference.cache
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.IServices\obj\Debug\Online.IServices.dll
+E:\ReactNativeTest\github\TwApplication\TwApplication\Online\Online.IServices\obj\Debug\Online.IServices.pdb
