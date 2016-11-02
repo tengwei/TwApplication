@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://Microsoft.Samples.NetTcp" elementFormDefault="qualified" targetNamespace="http://Microsoft.Samples.NetTcp" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://localhost:8089/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Online.Models" />
+  <xs:import schemaLocation="http://localhost:15709/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Online.Models" />
   <xs:element name="Add">
     <xs:complexType>
       <xs:sequence>

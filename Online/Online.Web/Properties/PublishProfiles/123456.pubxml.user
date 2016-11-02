@@ -19,22 +19,22 @@
       <publishTime>10/28/2016 12:34:49</publishTime>
     </File>
     <File Include="bin/Online.Common.dll">
-      <publishTime>10/31/2016 10:28:14</publishTime>
+      <publishTime>11/01/2016 11:20:07</publishTime>
     </File>
     <File Include="bin/Online.DataBase.dll">
-      <publishTime>10/31/2016 10:28:13</publishTime>
+      <publishTime>11/01/2016 09:34:21</publishTime>
     </File>
     <File Include="bin/Online.IServices.dll">
-      <publishTime>10/31/2016 10:28:13</publishTime>
+      <publishTime>11/01/2016 11:20:07</publishTime>
     </File>
     <File Include="bin/Online.Models.dll">
-      <publishTime>10/31/2016 10:28:13</publishTime>
+      <publishTime>11/01/2016 09:34:21</publishTime>
     </File>
     <File Include="bin/Online.Services.dll">
-      <publishTime>10/31/2016 10:28:14</publishTime>
+      <publishTime>11/01/2016 11:20:08</publishTime>
     </File>
     <File Include="bin/Online.Web.dll">
-      <publishTime>10/31/2016 16:29:02</publishTime>
+      <publishTime>11/01/2016 18:27:07</publishTime>
     </File>
     <File Include="CalculatorService.svc">
       <publishTime>05/25/2016 18:24:35</publishTime>
@@ -48,8 +48,11 @@
     <File Include="Service.svc">
       <publishTime>05/25/2016 18:43:35</publishTime>
     </File>
+    <File Include="Service1.svc">
+      <publishTime>11/01/2016 13:27:31</publishTime>
+    </File>
     <File Include="Web.config">
-      <publishTime>10/31/2016 16:33:29</publishTime>
+      <publishTime>11/01/2016 17:56:01</publishTime>
     </File>
     <File Include="WebForm1.aspx">
       <publishTime>10/31/2016 12:25:36</publishTime>

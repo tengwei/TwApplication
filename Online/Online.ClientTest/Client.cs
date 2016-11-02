@@ -1,9 +1,10 @@
 ﻿
 using System;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Online.ClientTest.ServiceReference1;
-
+using Online.ClientTest.ServiceReference3;
 using Online.Common;
 using Online.Models;
 using IService = Online.IServices.IService;
@@ -115,34 +116,45 @@ namespace Online.ClientTest {
         }
 
         static void Test1() {
-            for (int i = 0; i < 20; i++) {
+            var client = new ServiceClient();
+            for (int i = 0; i < 3; i++) {
 
                 var i1 = i;
                 Task.Factory.StartNew(() => {
                     Console.WriteLine(string.Format("-------------开始-------------{0}-{1}----------------------------", i1, DateTime.Now));
-                    using (var client = new ServiceClient()) {
+                    //using () {
                         double value1 = 100.00D;
                         double value2 = 15.99D;
                         double result = client.Add(value1, value2);
                         Console.WriteLine(string.Format("--------------结束------------{0}-{1}-----{2}-----------------------", i1, DateTime.Now, result));
-                    }
+                        //client.Close();
+                    //}
 
 
                 });
 
             }
-            // for (int i = 0; i < 100; i++) {
+            Thread.Sleep(9000);
+            using (var client1 = new Online.ClientTest.ServiceReference2.Service1Client()) {
+                double value1 = 100.00D;
+                double value2 = 15.99D;
+                Console.WriteLine(string.Format("-------------开始01-------------{0}-{1}----------------------------", "1111", DateTime.Now));
+                double result = client1.Subtract(value1, value2);
+                Console.WriteLine(string.Format("--------------结束01------------{0}-{1}-----{2}-----------------------", result, DateTime.Now, result));
+                client.Close();
+            }
+            //for (int i = 0; i < 100; i++) {
             //    var i1 = i;
             //    Task.Factory.StartNew(() => {
-            //        Console.WriteLine(string.Format("-------------开始-------------{0}-{1}----------------------------", i1,DateTime.Now));
+            //        Console.WriteLine(string.Format("-------------开始-------------{0}-{1}----------------------------", i1, DateTime.Now));
             //        using (var client = new OauthClient()) {
             //            double value1 = 100.00D;
             //            double value2 = 15.99D;
             //            var result = client.Code("2345");
-            //            Console.WriteLine(string.Format("--------------结束------------{0}-{1}-----{2}-----------------------", i1, DateTime.Now,result));
+            //            Console.WriteLine(string.Format("--------------结束------------{0}-{1}-----{2}-----------------------", i1, DateTime.Now, result));
             //        }
 
-                    
+
             //    });
 
             //}

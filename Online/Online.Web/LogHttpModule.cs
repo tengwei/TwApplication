@@ -27,13 +27,13 @@ namespace Online.Web {
             EventArgs e) {
           
             HttpApplication application = (HttpApplication) source;
-            logger.Debug("LogHttpModule_Application_BeginRequest");
+            //logger.Debug("LogHttpModule_Application_BeginRequest");
             
         }
 
         private void Application_EndRequest(Object source, EventArgs e) {
             HttpApplication application = (HttpApplication) source;
-            logger.Debug("LogHttpModule_Application_EndRequest");
+            //logger.Debug("LogHttpModule_Application_EndRequest");
             
         }
 

@@ -9,108 +9,316 @@
 //------------------------------------------------------------------------------
 
 namespace Online.ClientTest.ServiceReference3 {
+    using System.Runtime.Serialization;
+    using System;
     
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://Microsoft.Samples.NetTcp", ConfigurationName="ServiceReference3.IService")]
-    public interface IService {
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="VLoginUser", Namespace="http://schemas.datacontract.org/2004/07/Dbb.DTO")]
+    [System.SerializableAttribute()]
+    public partial class VLoginUser : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.Samples.NetTcp/IService/Add", ReplyAction="http://Microsoft.Samples.NetTcp/IService/AddResponse")]
-        double Add(double n1, double n2);
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.Samples.NetTcp/IService/Add", ReplyAction="http://Microsoft.Samples.NetTcp/IService/AddResponse")]
-        System.Threading.Tasks.Task<double> AddAsync(double n1, double n2);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LogMacField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.Samples.NetTcp/IService/Subtract", ReplyAction="http://Microsoft.Samples.NetTcp/IService/SubtractResponse")]
-        double Subtract(double n1, double n2);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LogMacNowField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.Samples.NetTcp/IService/Subtract", ReplyAction="http://Microsoft.Samples.NetTcp/IService/SubtractResponse")]
-        System.Threading.Tasks.Task<double> SubtractAsync(double n1, double n2);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LoginIpField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.Samples.NetTcp/IService/Multiply", ReplyAction="http://Microsoft.Samples.NetTcp/IService/MultiplyResponse")]
-        double Multiply(double n1, double n2);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string passwordField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.Samples.NetTcp/IService/Multiply", ReplyAction="http://Microsoft.Samples.NetTcp/IService/MultiplyResponse")]
-        System.Threading.Tasks.Task<double> MultiplyAsync(double n1, double n2);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string usernameField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.Samples.NetTcp/IService/Divide", ReplyAction="http://Microsoft.Samples.NetTcp/IService/DivideResponse")]
-        double Divide(double n1, double n2);
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.Samples.NetTcp/IService/Divide", ReplyAction="http://Microsoft.Samples.NetTcp/IService/DivideResponse")]
-        System.Threading.Tasks.Task<double> DivideAsync(double n1, double n2);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LogMac {
+            get {
+                return this.LogMacField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LogMacField, value) != true)) {
+                    this.LogMacField = value;
+                    this.RaisePropertyChanged("LogMac");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.Samples.NetTcp/IService/Get", ReplyAction="http://Microsoft.Samples.NetTcp/IService/GetResponse")]
-        Online.Models.BaseModel[] Get(string typeName);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LogMacNow {
+            get {
+                return this.LogMacNowField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LogMacNowField, value) != true)) {
+                    this.LogMacNowField = value;
+                    this.RaisePropertyChanged("LogMacNow");
+                }
+            }
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.Samples.NetTcp/IService/Get", ReplyAction="http://Microsoft.Samples.NetTcp/IService/GetResponse")]
-        System.Threading.Tasks.Task<Online.Models.BaseModel[]> GetAsync(string typeName);
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LoginIp {
+            get {
+                return this.LoginIpField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LoginIpField, value) != true)) {
+                    this.LoginIpField = value;
+                    this.RaisePropertyChanged("LoginIp");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string password {
+            get {
+                return this.passwordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.passwordField, value) != true)) {
+                    this.passwordField = value;
+                    this.RaisePropertyChanged("password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string username {
+            get {
+                return this.usernameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.usernameField, value) != true)) {
+                    this.usernameField = value;
+                    this.RaisePropertyChanged("username");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="VTaobaoAppKeyAction", Namespace="http://schemas.datacontract.org/2004/07/Dbb.DTO")]
+    [System.SerializableAttribute()]
+    public partial class VTaobaoAppKeyAction : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AppSecretField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UrlField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string actionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string appkeyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int idField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string typeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AppSecret {
+            get {
+                return this.AppSecretField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AppSecretField, value) != true)) {
+                    this.AppSecretField = value;
+                    this.RaisePropertyChanged("AppSecret");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Url {
+            get {
+                return this.UrlField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UrlField, value) != true)) {
+                    this.UrlField = value;
+                    this.RaisePropertyChanged("Url");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string action {
+            get {
+                return this.actionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.actionField, value) != true)) {
+                    this.actionField = value;
+                    this.RaisePropertyChanged("action");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string appkey {
+            get {
+                return this.appkeyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.appkeyField, value) != true)) {
+                    this.appkeyField = value;
+                    this.RaisePropertyChanged("appkey");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int id {
+            get {
+                return this.idField;
+            }
+            set {
+                if ((this.idField.Equals(value) != true)) {
+                    this.idField = value;
+                    this.RaisePropertyChanged("id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string type {
+            get {
+                return this.typeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.typeField, value) != true)) {
+                    this.typeField = value;
+                    this.RaisePropertyChanged("type");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IServiceChannel : Online.ClientTest.ServiceReference3.IService, System.ServiceModel.IClientChannel {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference3.IOauth")]
+    public interface IOauth {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOauth/Code", ReplyAction="http://tempuri.org/IOauth/CodeResponse")]
+        string Code(string username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOauth/Code", ReplyAction="http://tempuri.org/IOauth/CodeResponse")]
+        System.Threading.Tasks.Task<string> CodeAsync(string username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOauth/Login", ReplyAction="http://tempuri.org/IOauth/LoginResponse")]
+        string Login(Online.ClientTest.ServiceReference3.VLoginUser loginuser);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOauth/Login", ReplyAction="http://tempuri.org/IOauth/LoginResponse")]
+        System.Threading.Tasks.Task<string> LoginAsync(Online.ClientTest.ServiceReference3.VLoginUser loginuser);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOauth/TaobaoAppKeyList", ReplyAction="http://tempuri.org/IOauth/TaobaoAppKeyListResponse")]
+        Online.ClientTest.ServiceReference3.VTaobaoAppKeyAction[] TaobaoAppKeyList();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IOauth/TaobaoAppKeyList", ReplyAction="http://tempuri.org/IOauth/TaobaoAppKeyListResponse")]
+        System.Threading.Tasks.Task<Online.ClientTest.ServiceReference3.VTaobaoAppKeyAction[]> TaobaoAppKeyListAsync();
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IOauthChannel : Online.ClientTest.ServiceReference3.IOauth, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ServiceClient : System.ServiceModel.ClientBase<Online.ClientTest.ServiceReference3.IService>, Online.ClientTest.ServiceReference3.IService {
+    public partial class OauthClient : System.ServiceModel.ClientBase<Online.ClientTest.ServiceReference3.IOauth>, Online.ClientTest.ServiceReference3.IOauth {
         
-        public ServiceClient() {
+        public OauthClient() {
         }
         
-        public ServiceClient(string endpointConfigurationName) : 
+        public OauthClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public ServiceClient(string endpointConfigurationName, string remoteAddress) : 
+        public OauthClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public OauthClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public OauthClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public double Add(double n1, double n2) {
-            return base.Channel.Add(n1, n2);
+        public string Code(string username) {
+            return base.Channel.Code(username);
         }
         
-        public System.Threading.Tasks.Task<double> AddAsync(double n1, double n2) {
-            return base.Channel.AddAsync(n1, n2);
+        public System.Threading.Tasks.Task<string> CodeAsync(string username) {
+            return base.Channel.CodeAsync(username);
         }
         
-        public double Subtract(double n1, double n2) {
-            return base.Channel.Subtract(n1, n2);
+        public string Login(Online.ClientTest.ServiceReference3.VLoginUser loginuser) {
+            return base.Channel.Login(loginuser);
         }
         
-        public System.Threading.Tasks.Task<double> SubtractAsync(double n1, double n2) {
-            return base.Channel.SubtractAsync(n1, n2);
+        public System.Threading.Tasks.Task<string> LoginAsync(Online.ClientTest.ServiceReference3.VLoginUser loginuser) {
+            return base.Channel.LoginAsync(loginuser);
         }
         
-        public double Multiply(double n1, double n2) {
-            return base.Channel.Multiply(n1, n2);
+        public Online.ClientTest.ServiceReference3.VTaobaoAppKeyAction[] TaobaoAppKeyList() {
+            return base.Channel.TaobaoAppKeyList();
         }
         
-        public System.Threading.Tasks.Task<double> MultiplyAsync(double n1, double n2) {
-            return base.Channel.MultiplyAsync(n1, n2);
-        }
-        
-        public double Divide(double n1, double n2) {
-            return base.Channel.Divide(n1, n2);
-        }
-        
-        public System.Threading.Tasks.Task<double> DivideAsync(double n1, double n2) {
-            return base.Channel.DivideAsync(n1, n2);
-        }
-        
-        public Online.Models.BaseModel[] Get(string typeName) {
-            return base.Channel.Get(typeName);
-        }
-        
-        public System.Threading.Tasks.Task<Online.Models.BaseModel[]> GetAsync(string typeName) {
-            return base.Channel.GetAsync(typeName);
+        public System.Threading.Tasks.Task<Online.ClientTest.ServiceReference3.VTaobaoAppKeyAction[]> TaobaoAppKeyListAsync() {
+            return base.Channel.TaobaoAppKeyListAsync();
         }
     }
 }

@@ -92,29 +92,29 @@
     <None Include="Service References\ServiceReference1\Service2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference2\Oauth.wsdl" />
-    <None Include="Service References\ServiceReference2\Oauth.xsd">
+    <None Include="Service References\ServiceReference2\Service1.wsdl" />
+    <None Include="Service References\ServiceReference2\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference2\Oauth1.xsd">
+    <None Include="Service References\ServiceReference2\Service11.wsdl" />
+    <None Include="Service References\ServiceReference2\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference2\Oauth2.xsd">
+    <None Include="Service References\ServiceReference2\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReference2\Online.ClientTest.ServiceReference2.VTaobaoAppKeyAction.datasource">
+    <None Include="Service References\ServiceReference3\Oauth.wsdl" />
+    <None Include="Service References\ServiceReference3\Oauth.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference3\Oauth1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference3\Oauth2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference3\Online.ClientTest.ServiceReference3.VTaobaoAppKeyAction.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\ServiceReference3\Service.wsdl" />
-    <None Include="Service References\ServiceReference3\Service.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference3\Service1.wsdl" />
-    <None Include="Service References\ServiceReference3\Service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference3\Service2.xsd">
-      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -141,7 +141,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReference2\Oauth.disco" />
+    <None Include="Service References\ServiceReference2\Service1.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReference2\configuration91.svcinfo" />
@@ -156,7 +156,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReference3\Service.disco" />
+    <None Include="Service References\ServiceReference3\Oauth.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReference3\configuration91.svcinfo" />

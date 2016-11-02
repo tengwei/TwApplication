@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="002167f2-6dee-473c-874f-0bc6cec3cfe0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="23ed7436-1bd6-419b-9b7a-dc857002d79d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,15 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8089/Service.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:1684/Oauth.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="c5514948-192b-4b6a-8d63-4dd626d64f3e" SourceId="1" SourceUrl="http://localhost:8089/Service.svc?xsd=xsd0" />
-    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="40e951cf-9593-4941-a78b-17d4f1fe7d91" SourceId="1" SourceUrl="http://localhost:8089/Service.svc?xsd=xsd1" />
-    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="fddae1fb-1f06-47fd-8f79-e9789475e723" SourceId="1" SourceUrl="http://localhost:8089/Service.svc?xsd=xsd2" />
-    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="4caa68b5-d47d-48e6-9466-3619332b9dd3" SourceId="1" SourceUrl="http://localhost:8089/Service.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="c936501b-1cfb-4702-b69b-78b35d4973ee" SourceId="1" SourceUrl="http://localhost:8089/Service.svc?wsdl" />
-    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="b1eb28d6-0ae0-42d6-b887-31bdfab680e8" SourceId="1" SourceUrl="http://localhost:8089/Service.svc?disco" />
+    <MetadataFile FileName="Oauth.disco" MetadataType="Disco" ID="d54e42fe-9f21-4998-b6a2-672a11d03317" SourceId="1" SourceUrl="http://localhost:1684/Oauth.svc?disco" />
+    <MetadataFile FileName="Oauth.xsd" MetadataType="Schema" ID="bbd0daaa-4e6e-48d6-89fd-8f7c05c0ff18" SourceId="1" SourceUrl="http://localhost:1684/Oauth.svc?xsd=xsd1" />
+    <MetadataFile FileName="Oauth1.xsd" MetadataType="Schema" ID="c43981e8-b0e4-4472-9c2a-1a4f0c44a463" SourceId="1" SourceUrl="http://localhost:1684/Oauth.svc?xsd=xsd0" />
+    <MetadataFile FileName="Oauth2.xsd" MetadataType="Schema" ID="50bef69d-646c-4af5-97cb-46a5f1145eaa" SourceId="1" SourceUrl="http://localhost:1684/Oauth.svc?xsd=xsd2" />
+    <MetadataFile FileName="Oauth.wsdl" MetadataType="Wsdl" ID="56f4d614-4609-470f-8581-6c1668fd319b" SourceId="1" SourceUrl="http://localhost:1684/Oauth.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
