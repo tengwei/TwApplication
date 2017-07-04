@@ -7,24 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Online.DataBase
+using System;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+
+public partial class db_10140_archivesEntities : DbContext
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Infrastructure;
-    
-    public partial class db_10140_archivesEntities : DbContext
+    public db_10140_archivesEntities()
+        : base("name=db_10140_archivesEntities")
     {
-        public db_10140_archivesEntities()
-            : base("name=db_10140_archivesEntities")
-        {
-        }
-    
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            throw new UnintentionalCodeFirstException();
-        }
-    
-        public virtual DbSet<db_API_Operationallog> db_API_Operationallog { get; set; }
     }
+
+    protected override void OnModelCreating(DbModelBuilder modelBuilder)
+    {
+        throw new UnintentionalCodeFirstException();
+    }
+
+    public virtual DbSet<db_API_Operationallog> db_API_Operationallog { get; set; }
 }
